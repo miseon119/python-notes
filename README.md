@@ -1,4 +1,4 @@
-# python3 notes
+# Python3 Notes
 
 ## Contents
 
