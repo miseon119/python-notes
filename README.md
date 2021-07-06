@@ -8,7 +8,7 @@
 |2| [Parse ini file](./parse-ini/ini-demo.py)| read,write,change ini file | |
 |3| [move files](./move-files-to-dir.py)| moving files to directory | |
 |4| [directory tool](./directory-tools.py)| Delete, Create directory.  | |
-|5|[ 2D array to 1D array](./numpt/array-reshape.py)| |
+|5|[ 2D array to 1D array](./numpy/array-reshape.py)| Reshape multi-dimentional array to 1D array |
 
 
 
