@@ -10,7 +10,7 @@
 |4| [directory tool](./directory-tools.py)| Delete, Create directory.  | |
 |5| [ 2D array to 1D array](./numpy/array-reshape.py)| Reshape multi-dimentional array to 1D array |
 |6| [check memory address](https://github.com/miseon119/python-notes/blob/fb6de84a723abc9c3a5a9079134fff7622817452/check-memory-addr.py#L2)| Check class or variable memory address |
-|7| [byte array to short array](https://github.com/miseon119/python-notes/blob/4899bbf4d19c5257dbce3eda83625203f86a24dc/check-memory-addr.py#L4)| [reference](https://nowonbun.tistory.com/689) |
+|7| [byte array to short array](https://github.com/miseon119/python-notes/blob/4899bbf4d19c5257dbce3eda83625203f86a24dc/check-memory-addr.py#L4)| change byte array to short array |[reference](https://nowonbun.tistory.com/689) |
 
 
 
