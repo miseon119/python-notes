@@ -14,4 +14,19 @@
 
 
 
+---
+
+### Little and Big Endian
+
+Little and big endian are two ways of storing multibyte data-types.
+
+**little endian machines**, last byte of binary representation of the multibyte data-type is stored first.
+
+**big endian machines**, first byte of binary representation of the multibyte data-type is stored first.
+
+e.g. Variable x with value 0x01234567 will be stored as following.
+
+![bigendian](http://4.bp.blogspot.com/_IEmaCFe3y9g/SO3GGEF4UkI/AAAAAAAAAAc/z7waF2Lwg0s/s400/lb.GIF)
+
+
 
