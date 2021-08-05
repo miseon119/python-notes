@@ -29,4 +29,47 @@ e.g. Variable x with value 0x01234567 will be stored as following.
 ![bigendian](http://4.bp.blogspot.com/_IEmaCFe3y9g/SO3GGEF4UkI/AAAAAAAAAAc/z7waF2Lwg0s/s400/lb.GIF)
 
 
+---
+
+### Iterable, Iterator, Iteration
+ 
+#### Iterable  
+It is kind of object which is a collection of other elements. For example list and tuple are Iterables. **In Python** a class is called Iterable if it has overloaded the magic method `__iter__()` . This function must return an Iterator object.
+
+#### Iterator
+It is an object that enables us to iterate over the associated container or an Iterable object. **In Python** a class is called Iterator if it has overloaded the magic method `__next__()`. This function **must return one element** at a given time and then **increments the internal pointer to next**.
+
+#### Iteration
+Iteration is a process of iterating over all the elements of an **Iterable** using **Iterator** object. In python we can do iteration using for loops or while loop.
+
+e.g.
+```python
+listOfNum = [11, 12, 13, 14, 15, 16]
+
+# get the Iterator of list
+listIterator = iter(listOfNum)
+
+# print type
+print(type(listIterator))
+```
+output:
+```console
+$ <class 'list_iterator'>
+```
+
+>List in python is an Iterable object because it has overloaded the __iter__() function, which returns an Iterator. To get the Iterator object from a Iterable object we need to call iter() function. 
+
+Use iterator object to iterate over the list, 
+e.g.
+```python
+while True:
+    try:
+        # Get next element from list using iterator object
+        elem = next(listIterator)
+        # Print the element
+        print(elem)
+    except StopIteration:
+        break
+```
+
 
