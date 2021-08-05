@@ -72,4 +72,5 @@ while True:
         break
 ```
 
+> We called next() function on Iterator object again & again to iterate over all its elements.
 
