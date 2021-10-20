@@ -42,3 +42,12 @@ def get_current_time():
     time = datetime.now().strftime('%H-%M-%S-%f%z')
     # time = datetime.utcnow().strftime('%H-%M-%S-%f')[:-3]
     return time
+
+# Check if File Exists
+os.path.isfile('./final_data.csv')
+
+# Check if Directory Exists
+os.path.isdir('./final_data_folder')
+
+# Checking If a Certain File or Directory Exists
+os.path.exists('./final_data_2020.csv')          # it's ok in directory case
