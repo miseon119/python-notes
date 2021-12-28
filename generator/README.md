@@ -4,6 +4,12 @@
 
 If a function contains at least one `yield` statement, it becomes a **generator function**. Both `yield` and `return` will return some value from a function.
 
+## Why generator
+
+- Memory Efficient
+- Represent Infinite Stream
+- Pipelining Generators
+
 ## Difference
 while a `return` statement terminates a function entirely, 
 
@@ -71,3 +77,10 @@ next(a)      # Traceback (most recent call last):  StopIteration
 for item in my_gen():
     print(item)
 ```
+
+## generator expression VS. list comprehension
+
+> The major difference between a list comprehension and a generator expression is that a **list comprehension** produces the entire list while the **generator expression** produces one item at a time.
+
+> They have lazy execution ( producing items only when asked for ). For this reason, a **generator expression** is much more **memory efficient** than an equivalent list comprehension
+
