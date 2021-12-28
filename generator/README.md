@@ -84,3 +84,4 @@ for item in my_gen():
 
 > They have lazy execution ( producing items only when asked for ). For this reason, a **generator expression** is much more **memory efficient** than an equivalent list comprehension
 
+[more](https://www.programiz.com/python-programming/generator)
