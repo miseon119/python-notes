@@ -8,7 +8,7 @@ If a function contains at least one `yield` statement, it becomes a **generator 
 
 - Memory Efficient
 - Represent Infinite Stream
-- Pipelining Generators
+- [Pipelining Generators](https://github.com/miseon119/python-notes/blob/188bf38b2cf3e9ad93b5d4b023047efd1ef006eb/generator/generatorNote.py#L38)
 
 ## Difference
 while a `return` statement terminates a function entirely, 
