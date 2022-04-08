@@ -14,3 +14,9 @@ obj_list=[[array], [array], [array]...]
 # bbox_result is a list
 bboxes = np.vstack(bbox_result)
 ```
+
+## print array without "e"
+e.g. "5.69083023e+01" to 569.083
+```bash
+np.set_printoptions(suppress=True)
+```
