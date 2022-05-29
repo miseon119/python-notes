@@ -13,6 +13,7 @@
 |7| [byte array to short array](https://github.com/miseon119/python-notes/blob/4899bbf4d19c5257dbce3eda83625203f86a24dc/check-memory-addr.py#L4)| change byte array to short array |[Link](https://nowonbun.tistory.com/689), [Little/Big Endian](https://github.com/miseon119/python-notes#little-and-big-endian)|
 |8| [check file exist](https://github.com/miseon119/python-notes/blob/18f9d620b59bb6504735cb9a7820ce78affc12ad/directory-tools.py#L47) | check if a file or a directory exist  |  |
 |9| [generator](generator/generatorNote.py) | | |
+|10| [find a word in a string](./basic/string-operate.py) | | |
 
 
 ---
