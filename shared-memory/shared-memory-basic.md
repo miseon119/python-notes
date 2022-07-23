@@ -33,7 +33,7 @@ In this way, one process can create a shared memory block with a **particular na
 `size` specifies the requested number of bytes when creating a new shared memory block. Because some platforms choose to allocate chunks of memory based upon that platform’s memory page size, the exact size of the shared memory block may be larger or equal to the size requested. When attaching to an existing shared memory block, the size parameter is ignored.
 
 
-## Example
+#### Example
 
 example 1: 
 ```bash
@@ -104,3 +104,48 @@ array([  1,   1,   2,   3,   5, 888])
 >>> shm.close()
 >>> shm.unlink()  # Free and release the shared memory block at the very end
 ```
+
+## Multiprocessing.managers.SharedMemoryManager
+
+> It can be used for the management of shared memory blocks across processes.
+
+### start()
+
+A call to `start()` on a `SharedMemoryManager` instance causes a new process to be started. This new process’s sole purpose is to **manage the life cycle of all shared memory blocks** created through it.
+
+### shutdown()
+
+To trigger the release of all shared memory blocks managed by that process, call `shutdown()` on the instance. This triggers a `SharedMemory.unlink()` call on all of the SharedMemory objects managed by that process and then stops the process itself. 
+
+
+#### Example
+
+example 1:
+```bash
+>>> from multiprocessing.managers import SharedMemoryManager
+>>> smm = SharedMemoryManager()
+>>> smm.start()  # Start the process that manages the shared memory blocks
+>>> sl = smm.ShareableList(range(4))
+>>> sl
+ShareableList([0, 1, 2, 3], name='psm_6572_7512')
+>>> raw_shm = smm.SharedMemory(size=128)
+>>> another_sl = smm.ShareableList('alpha')
+>>> another_sl
+ShareableList(['a', 'l', 'p', 'h', 'a'], name='psm_6572_12221')
+>>> smm.shutdown()  # Calls unlink() on sl, raw_shm, and another_sl
+```
+
+example 2:
+```bash
+>>> with SharedMemoryManager() as smm:
+...     sl = smm.ShareableList(range(2000))
+...     # Divide the work among two processes, storing partial results in sl
+...     p1 = Process(target=do_work, args=(sl, 0, 1000))
+...     p2 = Process(target=do_work, args=(sl, 1000, 2000))
+...     p1.start()
+...     p2.start()  # A multiprocessing.Pool might be more efficient
+...     p1.join()
+...     p2.join()   # Wait for all work to complete in both processes
+...     total_result = sum(sl)  # Consolidate the partial results now in sl
+```
+
