@@ -14,6 +14,7 @@
 |8| [check file exist](https://github.com/miseon119/python-notes/blob/18f9d620b59bb6504735cb9a7820ce78affc12ad/directory-tools.py#L47) | check if a file or a directory exist  |  |
 |9| [generator](generator/generatorNote.py) | | |
 |10| [find a word in a string](./basic/string-operate.py) | | |
+|11| [shared memory usage](./shared-memory/shared-memory-basic.md) | basic shared memory usage in python 3.8 | |
 
 
 ---
