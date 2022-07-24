@@ -64,3 +64,18 @@ array([20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40])
 ```
 [more](https://opensourceoptions.com/blog/10-ways-to-initialize-a-numpy-array-how-to-create-numpy-arrays/)
 
+
+### np.full() VS np.fill()
+
+With `numpy.full()` we can combine the two lines of code from the last section (one line to **create an empty array**, and one line to **fill the array with a value**) into a single function.
+
+```python
+import numpy as np
+
+a = np.full([2, 2], 67, dtype = int)
+print("\nMatrix a : \n", a)
+
+c = np.full([3, 3], 10.1)
+print("\nMatrix c : \n", c)
+
+```
