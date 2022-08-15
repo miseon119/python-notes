@@ -17,6 +17,7 @@
 |11| [shared memory usage](./shared-memory/shared-memory-basic.md) | basic shared memory usage in python 3.8 | |
 |12| [event bus](./event-bus/event-bus-basic.md)| | [link](https://www.joeltok.com/blog/2021-3/building-an-event-bus-in-python)|
 |13| [Numpy data type, initialize ](./numpy/numpy-basic.md) | | |
+|14| [import tips](./basic/import-basic.md) | | |
 
 
 
