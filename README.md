@@ -19,6 +19,7 @@
 |13| [Numpy data type, initialize ](./numpy/numpy-basic.md) | | |
 |14| [import tips](./basic/import-basic.md) | | |
 |15| [Dictionary](./basic/dictionary-usage.md) | | |
+|16| [string basic](./basic/string-usage.md) | | |
 
 
 
