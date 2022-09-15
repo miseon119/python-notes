@@ -18,6 +18,7 @@
 |12| [event bus](./event-bus/event-bus-basic.md)| | [link](https://www.joeltok.com/blog/2021-3/building-an-event-bus-in-python)|
 |13| [Numpy data type, initialize ](./numpy/numpy-basic.md) | | |
 |14| [import tips](./basic/import-basic.md) | | |
+|15| [Dictionary](./basic/dictionary-usage.md) | | |
 
 
 
