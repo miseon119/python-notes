@@ -26,3 +26,33 @@ int(loggertype.Info)
 0
 ```
 
+## Color print
+
+```python
+from enum import IntEnum
+
+IS_DEBUG = True
+
+class ColorType(IntEnum):
+    RED = 1
+    YELLOW = 2
+    GREEN = 3
+    BLUE = 4
+    PURPLE = 5
+    
+    
+def debug_print(clr, cls_name, str_level, msg):
+    if IS_DEBUG == True:
+        base_str = "======"
+        if clr == ColorType.RED:
+            print(f'\033[91m [ {cls_name} ] {base_str*str_level} {msg}\033[00m', flush= True) 
+        elif clr == ColorType.YELLOW:
+            print(f'\033[93m [ {cls_name} ] {base_str*str_level} {msg}\033[00m', flush= True) 
+        elif clr == ColorType.GREEN:
+            print(f'\033[92m [ {cls_name} ] {base_str*str_level} {msg}\033[00m', flush= True) 
+        elif clr == ColorType.BLUE:
+            print(f'\033[94m [ {cls_name} ] {base_str*str_level} {msg}\033[00m', flush= True) 
+        elif clr == ColorType.PURPLE:
+            print(f'\033[95m [ {cls_name} ] {base_str*str_level} {msg}\033[00m', flush= True) 
+
+```
