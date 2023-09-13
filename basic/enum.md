@@ -56,3 +56,14 @@ def debug_print(clr, cls_name, str_level, msg):
             print(f'\033[95m [ {cls_name} ] {base_str*str_level} {msg}\033[00m', flush= True) 
 
 ```
+
+```python
+def prRed(prt):
+    print(f"\033[91m{prt}\033[00m")
+
+def prGreen(prt):
+    print(f"\033[92m{prt}\033[00m")
+
+def prYellow(prt):
+    print(f"\033[93m{prt}\033[00m")
+```
