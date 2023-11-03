@@ -67,3 +67,25 @@ def prGreen(prt):
 def prYellow(prt):
     print(f"\033[93m{prt}\033[00m")
 ```
+
+## Using Process Bar
+
+```python
+from tqdm import tqdm
+import time
+ 
+for i in tqdm(range(10)): 
+    time.sleep(0.01)
+```
+
+```python
+iterable = ['a', 'b', 'c', 'd', 'e']
+for i in tqdm(iterable, 
+              total = len(iterable), ## 전체 진행수
+              desc = 'Description', ## 진행률 앞쪽 출력 문장
+              ncols = 70, ## 진행률 출력 폭 조절
+              ascii = ' =', ## 바 모양, 첫 번째 문자는 공백이어야 작동
+              leave = True, ## True 반복문 완료시 진행률 출력 남김. False 남기지 않음.
+             ):
+    time.sleep(0.2)
+```
